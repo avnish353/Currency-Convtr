@@ -39,7 +39,7 @@
 
  .dropdown {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items:center;
  }
 
@@ -81,12 +81,23 @@
     cursor: pointer;
   }
 
-  @media screen and (orientation: landscape) {
+  @media screen and (max-width:500px) {
    .container{
   background-color: #ffff;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
   min-height: 43vh;
-  width: 40vh;
+  width: 40vh; 
+   }
+   .dropdown {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+ .dropdown i{
+   margin: 1rem ;
+   margin-top: 4rem;
+   margin-bottom: 3rem;
+    font-size: 1rem;
  }
   }
